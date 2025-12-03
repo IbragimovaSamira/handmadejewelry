@@ -1,0 +1,83 @@
+.nav-link {
+            color: black;
+            text-decoration: none;
+        }
+.nav-link:hover {
+            text-decoration: underline;
+        }
+.nav-link.active {
+            font-weight: bold;
+            background-color: #faf8fa;
+        }
+
+.section-highlight {
+            background-color: #fcf5fb;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #f3e2f069;
+        }
+
+.graphic-link {
+            transition: transform 0.3s ease;
+        }
+
+.graphic-link:hover {
+            transform: scale(1.05);
+        }
+
+.nav-tabs .nav-link {
+    color: black; 
+    background-color: #fff6fb; 
+    border-color: #f9c6df #f9c6df #f9c6df; 
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #fcd3e7; 
+    color: #b3006f;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #f9c6df; 
+    border-color: #d63384 #d63384 #fff;
+    color: #b3006f;
+    font-weight: bold;
+}
+.inner-nav .btn {
+    color: black; 
+    border-color: #f5b6d6; 
+    background-color: white; 
+}
+.inner-nav .btn:hover {
+    background-color: #f9c6df; 
+    color: #b3006f;  
+    border-color: #d63384;
+}
+
+.inner-nav .btn:active,
+.inner-nav .btn:focus {
+    background-color: #f3b2d2;
+    color: #a00066;
+    border-color: #d63384;
+}
+.card-img-top {
+    max-height: 200px;     
+    object-fit: contain;     
+}
+.cart-btn {
+    color: black !important;
+    border-color: black !important;
+}
+
+.cart-btn:hover {
+    background-color: white!important;
+    color: white;
+}
+.add-to-cart-btn {
+    color: black !important;
+    border-color: black !important;
+
+}
+.add-to-cart-btn:hover{
+    background-color: #fcd3e7 !important;
+    color: white;
+}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Мастерская Handmade украшений - Главная</title>
+     <link
+      rel="stylesheet"
+      href="index1.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="card card-header"
+            style="background: linear-gradient(rgba(248, 240, 247, 0.3), rgba(248, 236, 248, 0.3)), url(photo1.jpg);">
+            <div class="card-body">
+                <h3 class="card-title text-center" style="color: black; 
+                       text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;">
+                    Мастерская Handmade украшений.<br>
+                </h3>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"> <a class="nav-link" href="./index.html">Начальная страница</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="./index2.html">Наш магазин</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./index4.html">Рекомендации по уходу</a></li>
+                    <li class="nav-item"> <a class="nav-link active" href="./index3.html">Оставить отзыв</a></li>
+                </ul>
+            </div>
+<div class="card-body">
+                <h3 class="card-title text-center">Оставить отзыв</h3>
+
+                 <form class = "form" action = 'https://ya.ru/?npr=1' method = "get" target = "_blank">
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Фамилия и имя:</label>
+                            <input type="text" class="form-control" name="customer_name" value="Маша Киселева"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email:</label>
+                            <input type="text" class="form-control" name="customer_email" value="example@mail.ru"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Телефон:</label>
+                            <input type="text" class="form-control" name="customer_phone" value="+7 999 999-99-99"
+                                required>
+                        </div>
+                       
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Оцените нашу работу по 5-бальной шкале:</label>
+                            <select class="form-select" name="jersey_size" required>
+                                <option value="1">1</option>
+                                <option value="2" >2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5" selected>5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Оцените работу поддержки:</label>
+                            <input type="number" class="form-control" name="jersey_number" min="1" max="100" value="100"
+                                required>
+                        </div>
+                    </div>
+
+            
+
+                    <div class="mb-3">
+                        <label class="form-label">Что вам запомнилось?</label>
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="options" value="printing" checked>
+                                <label class="form-check-label">Отзывчивые мастера</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="options" value="patches">
+                                <label class="form-check-label">Хорошее местоположение</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="options" value="premium">
+                                <label class="form-check-label">Атмосферная обстановка</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="options" value="premium">
+                                <label class="form-check-label">Уютная студия</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Тип вашего отзыва:</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="delivery_method" value="standard"
+                                    checked>
+                                <label class="form-check-label">Позитивный</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="delivery_method" value="express">
+                                <label class="form-check-label">Негативный</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Что понравилось/не понравилось:</label>
+                        <textarea class="form-control" name="order_comment"
+                            rows="3">Мне всё очень понравилось/Я бы хотела исправить...</textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Дата вашего последнего посещения:</label>
+                        <input type="date" class="form-control" name="desired_delivery_date" value="2025-10-06">
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="password" class="form-label">Пароль:</label>
+                            <input type="password" name="password" size=9  value="123456789">
+                    </div>
+                    <div class="text-center">
+                        <input type="reset" class="btn btn-secondary me-2" value="Очистить форму">
+                        <input type="submit" class="btn btn-primary" value="Оставить отзыв">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+       <footer class="card card-footer">
+            <div class="card-body text-center">
+                <p>© 2025 Мастерская handmade украшений</p>
+            </div>
+        </footer>
+    </div>
+
+    <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
